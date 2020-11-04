@@ -140,7 +140,7 @@ Print_Style "Getting latest download..." "$YELLOW"
 }
 
 ScriptUpdate () {
-  ONLINE_"`curl -s https://raw.githubusercontent.com/Randomblock1/checkra1n-linux/master/installer.sh | head -n 5 | grep VERSION`"
+  ONLINE_VERSION="$(curl -s https://raw.githubusercontent.com/Randomblock1/checkra1n-linux/master/installer.sh | head -n 5 | tail -c 4)"
   if [ "$ONLINE_VERSION" != "$VERSION" ]; then
   Print_Style "Updating..." "$GREEN"
       mkdir checkra1n-linux
