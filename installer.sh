@@ -207,7 +207,7 @@ Libhooker has been reported to be slightly more stable and efficient than Substr
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/coolstar/Odyssey-bootstrap/master/procursus-deploy-linux-macos.sh)"
     iproxy 4444 44 >> /dev/null 2>/dev/null &
     echo "Default password is: alpine"
-    ssh -p4444 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" root@127.0.0.1 "apt install org.coolstar.libhooker -y && /etc/rc.d/libhooker && sbreload"
+    ssh -p4444 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" root@127.0.0.1 "apt update && apt install org.coolstar.libhooker -y && /etc/rc.d/libhooker && sbreload"
     whiptail --title "Procursify" --msgbox "Success! Enjoy your libhooker." $((LINES/2)) $((COLUMNS*7/10))
   fi
 fi
