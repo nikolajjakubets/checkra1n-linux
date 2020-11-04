@@ -2,7 +2,7 @@
 # Checkra1n Easy Installer
 # GitHub Repository: https://github.com/Randomblock1/checkra1n-linux
 # shellcheck disable=SC2034,SC1091
-VERSION=2.0
+VERSION=2.1
 # Terminal colors
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
@@ -140,7 +140,7 @@ Print_Style "Getting latest download..." "$YELLOW"
 }
 
 ScriptUpdate () {
-  ONLINE_"$(curl -s https://raw.githubusercontent.com/Randomblock1/checkra1n-linux/master/installer.sh | head -n 4 | grep VERSION)"
+  ONLINE_"$(curl -s https://raw.githubusercontent.com/Randomblock1/checkra1n-linux/master/installer.sh | head -n 5 | grep VERSION)"
   if [ "$ONLINE_VERSION" != "$VERSION" ]; then
   Print_Style "Updating..." "$GREEN"
       mkdir checkra1n-linux
