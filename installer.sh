@@ -2,7 +2,7 @@
 # Checkra1n Easy Installer
 # GitHub Repository: https://github.com/Randomblock1/checkra1n-linux
 # shellcheck disable=SC2034,SC1091
-VERSION=2.0
+VERSION=2.1
 # Terminal colors
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
