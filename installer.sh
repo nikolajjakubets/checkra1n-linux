@@ -194,7 +194,7 @@ if (whiptail --title "Procursify" --yesno "Would you like to install the Procurs
 This will allow you to use libhooker, a replacement for Substrate, and the Procursus repo tools.\n\
 Procursus tools are more up-to-date than other repos.\n\
 Libhooker has been reported to be slightly more stable and efficient than Substrate, but no real testing has been done." $((LINES/2)) $((COLUMNS*7/10))); then
-  if (whiptail --title "Procursify" --yes-button "Continue" --no-button "Cancel" --yesno "It's time to prepare to Procursify\!\n\
+  if (whiptail --title "Procursify" --yes-button "Continue" --no-button "Cancel" --yesno "It's time to prepare your device.\n\
   Please do all of the following to continue.\n\
   1. Backup your tweaks with applist, batchomatic, or backupaz3.\n\
   2. Restore RootFS\n\
