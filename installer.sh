@@ -139,6 +139,8 @@ Print_Style "Getting latest download..." "$YELLOW"
     fi
 }
 
+export VERSION=$VERSION
+
 ScriptUpdate () {
   ONLINE_VERSION="$(curl -s https://raw.githubusercontent.com/Randomblock1/checkra1n-linux/master/installer.sh | head -n 5 | tail -c 4)"
   if [ "$ONLINE_VERSION" != "$VERSION" ]; then
