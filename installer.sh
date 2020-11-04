@@ -197,7 +197,7 @@ Libhooker has been reported to be slightly more stable and efficient than Substr
   1. Backup your tweaks with applist, batchomatic, or backupaz3.\n\
   2. Restore RootFS\n\
   3. Jailbreak but DO NOT OPEN THE CHECKRA1N LOADER ON YOUR device\n\
-  4. Continue here" $LINES $COLUMNS); then
+  4. Continue here" "$LINES" "$COLUMNS"); then
     if ! command -v iproxy &> /dev/null; then
       Print_Style "iproxy could not be found, attempting to install" "$RED"
       apt install -y libusbmuxd-tools
